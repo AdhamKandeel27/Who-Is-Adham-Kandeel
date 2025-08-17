@@ -1,0 +1,10 @@
+.banner-title {
+  margin-top: 3rem;
+  border: 3px solid black;
+  padding: 1.5rem 3rem;
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}

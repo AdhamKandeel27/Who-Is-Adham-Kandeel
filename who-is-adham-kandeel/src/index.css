@@ -1,1 +1,12 @@
-@import "tailwindcss";
+/* index.css (imported at root of React app) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures padding/border don’t add extra width */
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #909090;
+  color: #333;
+  line-height: 1.5;
+}

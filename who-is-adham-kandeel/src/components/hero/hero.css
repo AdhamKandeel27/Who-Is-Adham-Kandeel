@@ -1,0 +1,75 @@
+.hero-section-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+  align-items: stretch; /* both flex children (left and right) match height of the tallest one */
+  flex-wrap: wrap;
+}
+.hero-section-left,
+.hero-section-right {
+  flex: 1 1 50%;
+}
+.hero-section-left {
+  background: #e9e9e9;
+  clip-path: polygon(0 0, 85% 0, 70% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  padding-left: 9rem; 
+}
+
+.hero-section-right {
+  background: #000;
+  display: flex;
+  align-items: flex-end; /* optional: stick content bottom-right */
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+
+.introduction p {
+  color: black;
+  font-size: 1.2rem;
+}
+.introduction h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+.introduction h3 {
+  color: #909090;
+  font-size: 1rem;
+}
+
+.social-links {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.social-links a {
+  color: #c4c4c4;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);  
+  border-radius: 25px;
+  padding: .5rem;
+
+}
+.know-me-more{
+    margin-top: 2rem;
+
+}
+.know-me-more button{
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color: darkslategrey;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section-left {
+    clip-path: none; /* remove diagonal on mobile for simplicity */
+  }
+}
