@@ -1,16 +1,8 @@
-.about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 1rem;
-}
-
 .about-me-text {
   max-width: 700px;
-  line-height: 2; 
+  line-height: 2;
 }
 .about-me-text p {
   font-size: 0.75rem;
-  text-align: center ;
+  text-align: center;
 }

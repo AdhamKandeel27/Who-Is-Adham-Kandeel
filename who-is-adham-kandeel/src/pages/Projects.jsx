@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
+import ProjectsCard from "../components/projectsCard/ProjectsCard";
+import { projectsArray } from "../js/projects";
 
 const Projects = () => {
   return (
-    <div className="projects-wrapper d-flex gap-3">
-       
-
+    <div className="project-cards-container">
+      {projectsArray.map((proj) => (
+        <ProjectsCard key={proj.id} {...proj} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
